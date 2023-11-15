@@ -1,7 +1,10 @@
 //before Bootstrap
 $primary: #f17b15;
 $secondary: #f4a927;
-$custom-colors: ("ok": #a9ad91, "cancel": #fac59a);
+$custom-colors: (
+  "ok": #a9ad91,
+  "cancel": #fac59a,
+);
 $cancel: #fac59a;
 
 //Bootstrap
@@ -22,12 +25,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrap/scss/type";
 @import "bootstrap/scss/containers";
 
-
 //after Bootstrap
 
-
-@each $color, $value in $theme-colors{
-     .alert-#{$color}{
-          box-shadow: 3px 3px $gray-600;
-     }
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    box-shadow: 3px 3px $gray-600;
+  }
 }

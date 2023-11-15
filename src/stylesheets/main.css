@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: inherit;
 }
 
@@ -32,7 +34,10 @@ body p.author > span {
 body p.desc {
   text-align: justify;
 }
-body a:link, body a:visited, body a:active, body a:hover {
+body a:link,
+body a:visited,
+body a:active,
+body a:hover {
   text-decoration: none;
   color: rgb(18, 121, 162);
 }
@@ -43,4 +48,4 @@ body > footer {
   margin-top: 3rem;
   border-top: 1px solid darkgray;
   padding-top: 0.5rem;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
