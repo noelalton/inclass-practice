@@ -1,0 +1,42 @@
+@mixin make-button($color){
+     margin: .5em;
+     padding: .5em 1em;
+     font-size: 1.2rem;
+     display: inline-block;
+     background: $color;
+     color: white;
+     border: 1px solid darken($color, 15%);
+     border-radius: 6px;
+     transition: background-color .35s ease-in-out;
+     width: 100%;
+   
+     &:hover {
+       background: lighten($color, 10%)
+     }
+   
+     @media (min-width: 500px) {
+       & {
+        width: calc(50% - 2em);
+      }
+    }
+    @media (min-width: 740px) {
+       & {
+        width: auto;
+      }
+    }
+   }
+
+// buttons
+
+.button {
+   
+     @each $kind, $color in $button{
+          &.#{$kind}{
+               @include make-button($color);
+          }
+     }
+
+}
+   
+   
+   

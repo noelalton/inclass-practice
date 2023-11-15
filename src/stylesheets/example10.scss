@@ -1,0 +1,46 @@
+//before Bootstrap
+$grid-breakpoints:(
+     sm: 0,
+     md: 900px,
+     lg: 1200px
+);
+
+
+//bootstrap
+@import "bootstrap/scss/bootstrap";
+
+//after bootstrap
+$light-color: #f4a927;
+$dark-color: #f17b15;
+
+@mixin make-box($type){
+     @if $type == "light"{
+          background: lighten($light-color, 30%);
+          border: 2px solid $light-color;
+     }@else{
+          background: lighten($dark-color, 30%);
+          border: 2px solid $dark-color;
+     }
+}
+
+.l-box{
+     @include make-box("light");
+}
+
+.d-box{
+     @include make-box("dark");
+}
+
+.l-box-main{
+     @extend .l-box;
+     height: 50vh;
+}
+
+@include media-breakpoint-up(lg) {
+     .h-lg-50{
+          height: 50%;
+     }
+     .h-lg-100{
+          height: 100%;
+     }
+}

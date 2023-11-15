@@ -1,1 +1,33 @@
-/* TODO: Example 09 (Activity 10) CSS goes here */
+//before Bootstrap
+$primary: #f17b15;
+$secondary: #f4a927;
+$custom-colors: ("ok": #a9ad91, "cancel": #fac59a);
+$cancel: #fac59a;
+
+//Bootstrap
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//extra
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+
+
+//after Bootstrap
+
+
+@each $color, $value in $theme-colors{
+     .alert-#{$color}{
+          box-shadow: 3px 3px $gray-600;
+     }
+}

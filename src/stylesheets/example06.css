@@ -1,0 +1,286 @@
+/* Multi-line passes to CSS */
+.button {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #ccc;
+  color: white;
+  border: 1px solid #a6a6a6;
+  border-radius: 6px;
+  transition: background-color 0.35s ease-in-out;
+  width: 100%;
+}
+.button:hover {
+  background: #e6e6e6;
+}
+@media (min-width: 500px) {
+  .button {
+    width: calc(50% - 2em);
+  }
+}
+@media (min-width: 740px) {
+  .button {
+    width: auto;
+  }
+}
+
+.button.primary {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  border: 1px solid #0056b3;
+  border-radius: 6px;
+  transition: background-color 0.35s ease-in-out;
+  width: 100%;
+}
+.button.primary:hover {
+  background: #3395ff;
+}
+@media (min-width: 500px) {
+  .button.primary {
+    width: calc(50% - 2em);
+  }
+}
+@media (min-width: 740px) {
+  .button.primary {
+    width: auto;
+  }
+}
+
+.button.secondary {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #6c757d;
+  color: white;
+  border: 1px solid #494f54;
+  border-radius: 6px;
+  transition: background-color 0.35s ease-in-out;
+  width: 100%;
+}
+.button.secondary:hover {
+  background: #868e96;
+}
+@media (min-width: 500px) {
+  .button.secondary {
+    width: calc(50% - 2em);
+  }
+}
+@media (min-width: 740px) {
+  .button.secondary {
+    width: auto;
+  }
+}
+
+.button.success {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  border: 1px solid #19692c;
+  border-radius: 6px;
+  transition: background-color 0.35s ease-in-out;
+  width: 100%;
+}
+.button.success:hover {
+  background: #34ce57;
+}
+@media (min-width: 500px) {
+  .button.success {
+    width: calc(50% - 2em);
+  }
+}
+@media (min-width: 740px) {
+  .button.success {
+    width: auto;
+  }
+}
+
+.button.error {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #dc3545;
+  color: white;
+  border: 1px solid #a71d2a;
+  border-radius: 6px;
+  transition: background-color 0.35s ease-in-out;
+  width: 100%;
+}
+.button.error:hover {
+  background: #e4606d;
+}
+@media (min-width: 500px) {
+  .button.error {
+    width: calc(50% - 2em);
+  }
+}
+@media (min-width: 740px) {
+  .button.error {
+    width: auto;
+  }
+}
+
+.button.warning {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #ffc107;
+  color: white;
+  border: 1px solid #ba8b00;
+  border-radius: 6px;
+  transition: background-color 0.35s ease-in-out;
+  width: 100%;
+}
+.button.warning:hover {
+  background: #ffce3a;
+}
+@media (min-width: 500px) {
+  .button.warning {
+    width: calc(50% - 2em);
+  }
+}
+@media (min-width: 740px) {
+  .button.warning {
+    width: auto;
+  }
+}
+
+.alert {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background: #e6e6e6;
+  color: gray;
+  border: 1px solid #a6a6a6;
+  border-radius: 6px;
+}
+.alert .title {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.alert .title::after {
+  content: " ";
+  display: block;
+  padding-top: 5px;
+  border-bottom: 1px solid #a6a6a6;
+}
+
+.alert.primary {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background: #3395ff;
+  color: #003166;
+  border: 1px solid #0056b3;
+  border-radius: 6px;
+}
+.alert.primary .title {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.alert.primary .title::after {
+  content: " ";
+  display: block;
+  padding-top: 5px;
+  border-bottom: 1px solid #0056b3;
+}
+
+.alert.secondary {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background: #868e96;
+  color: #25282b;
+  border: 1px solid #494f54;
+  border-radius: 6px;
+}
+.alert.secondary .title {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.alert.secondary .title::after {
+  content: " ";
+  display: block;
+  padding-top: 5px;
+  border-bottom: 1px solid #494f54;
+}
+
+.alert.success {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background: #34ce57;
+  color: #0a2c12;
+  border: 1px solid #19692c;
+  border-radius: 6px;
+}
+.alert.success .title {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.alert.success .title::after {
+  content: " ";
+  display: block;
+  padding-top: 5px;
+  border-bottom: 1px solid #19692c;
+}
+
+.alert.error {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background: #e4606d;
+  color: #66121a;
+  border: 1px solid #a71d2a;
+  border-radius: 6px;
+}
+.alert.error .title {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.alert.error .title::after {
+  content: " ";
+  display: block;
+  padding-top: 5px;
+  border-bottom: 1px solid #a71d2a;
+}
+
+.alert.warning {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background: #ffce3a;
+  color: #6d5200;
+  border: 1px solid #ba8b00;
+  border-radius: 6px;
+}
+.alert.warning .title {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.alert.warning .title::after {
+  content: " ";
+  display: block;
+  padding-top: 5px;
+  border-bottom: 1px solid #ba8b00;
+}
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}/*# sourceMappingURL=example06.css.map */
